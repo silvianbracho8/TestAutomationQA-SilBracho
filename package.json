@@ -1,0 +1,21 @@
+{
+  "name": "qa-mercadolibre-simple",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas simples para Mercado Libre",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --format @cucumber/html-formatter",
+    "test:ui": "cucumber-js features/search_iphone.feature --format @cucumber/html-formatter",
+    "test:api": "cucumber-js features/api_validation.feature --format @cucumber/html-formatter"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@cucumber/html-formatter": "^21.12.0",
+    "@playwright/test": "^1.53.1",
+    "cucumber-html-reporter": "^6.0.0",
+    "playwright": "^1.35.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
